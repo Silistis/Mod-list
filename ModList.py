@@ -12,7 +12,7 @@ if os.path.exists(output_file):
     os.remove(output_file)
 
 with open(output_file, 'w') as f:
-    f.write('Ваши моды:' + '\n' + '\n')
+    f.write('Your Mods:' + '\n' + '\n')
     for file in os.listdir(folder_path):
         if file.endswith('.jar'):
             processed_name = process_filename(file)
